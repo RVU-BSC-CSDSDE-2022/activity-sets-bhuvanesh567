@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int input();
-int sum_func(int a, int b, int *sum);
+void add(int a, int b, int *sum);
 void output(int a, int b, int sum);
 
 int main(){
@@ -14,7 +14,7 @@ int main(){
   printf("%d", sum);
   return 0;
 }
-int sum_func(int *x,int *y, int *sum)
+void add(int *x,int *y, int *sum)
 {
   *sum=*x+*y;
 }
