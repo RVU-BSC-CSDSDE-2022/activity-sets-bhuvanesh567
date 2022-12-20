@@ -10,14 +10,13 @@ int main(){
   c= intput();
   largest = compare(a, b, c);
   output(a, b, c, largest);
-  return 0;
 }
   
-int input(){
+int input() {
   int x;
   printf("Enter the number\n");
   scanf("&d",&x);
-  return 0;
+  return (x);
 }
 
 int compare (int a, int b,int c)
@@ -31,6 +30,6 @@ int compare (int a, int b,int c)
 }
   
 void output (int a, int b, int c, int largest){
-  printf("the largest is %d %d %d is %d,a, b,c, largest");
+  printf("the largest is %d %d %d is %d,a,b,c, largest");
 }
 
