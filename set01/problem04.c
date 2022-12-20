@@ -5,19 +5,20 @@ int sum_func(int a, int b, int *sum);
 void output(int a, int b, int sum);
 
 int main(){
-   int a, b, sum;
+   int x, y, sum;
   printf("Enter the number");
-  scanf("%d",&a);
+  scanf("%d",&x);
   printf("Enter the number");
-  scanf("%d",&b);
-  sum_func(&a, &b,&sum);
+  scanf("%d",&y);
+  sum_func(&x, &y,&sum);
   printf("%d", sum);
   return 0;
 }
-int sum_func(int a,int b, int *sum){
-  *sum=a+b;
+int sum_func(int *x,int *y, int *sum)
+{
+  *sum=*x+*y;
 }
-void output(int a, int b, int sum){
-  printf("the sum of %d and %d is %d\n",a,b,sum);
+void output(int x, int y, int sum){
+  printf(" %d and %d is %d\n",x, y, sum);
 }
 
