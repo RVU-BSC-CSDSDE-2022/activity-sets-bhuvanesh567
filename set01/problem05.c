@@ -4,32 +4,32 @@ int compare (int a,int b,int c);
 void output (int a, int b, int c, int largest);
 
 int main(){
-  int a, b,c, largest;
-  a= input();
-  b= input();
-  c= intput();
-  largest = compare(a, b, c);
+  int a, b, c, largest;
+  a = input();
+  b = input();
+  c = input();
+  largest=compare(a, b, c);
   output(a, b, c, largest);
-}
-  
-int input() {
-  int x;
-  printf("Enter the number\n");
-  scanf("&d",&x);
-  return (x);
+  return 0;
 }
 
-int compare (int a, int b,int c)
-{
-  if((a>b)&&(a>c))
+int input(){
+  int x;
+  printf("Enter the number\n");
+  scanf("%d",&x);
+  return x;
+}
+
+int compare(int a, int b, int c){
+  if ((a>b)&&(a>c))
     return a;
-  if((b>a)&&(b>c))
+  else if((b>a)&&(b>c))
     return b;
-  if((c>a)&&(c>b))
+  else ((c>a)&&(c>b));
     return c;
 }
-  
-void output (int a, int b, int c, int largest){
-  printf("the largest is %d %d %d is %d,a,b,c, largest");
+
+void output(int a, int b, int c, int largest){
+  printf("the largest %d %d %d is %d", a, b, c, largest);
 }
 
