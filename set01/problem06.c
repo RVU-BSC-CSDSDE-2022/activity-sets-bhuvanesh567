@@ -5,22 +5,23 @@ void compare (int a,int b,int c,int *largest);
 void output (int a, int b, int c, int largest);
 
 int main(){
-  int a,b,c,largest;
-  a=input();
-  b=input();
-  c=input();
-  compare(a,b,c,&largest);
-  output(a,b,c,largest);
+  int a, b, c, largest;
+  a = input();
+  b = input();
+  c = input();
+  compare(a, b, c, &largest);
+  output(a, b, c, largest);
+  return 0;
 }
 
 int input(){
   int x;
   printf("Enter the number\n");
   scanf("%d",&x);
-  return (x);
+  return x;
 }
-void compare (int a,int b,int c,int *largest){  
 
+void compare (int a, int b, int c, int *largest){
   if ((a>=b))
     *largest=a;
   else if ((b>=c))
@@ -28,11 +29,11 @@ void compare (int a,int b,int c,int *largest){
   else 
     *largest=c;
 }
+
 void output (int a, int b, int c, int largest){
-  printf("the largest of %d %d %d is %d\n",a,b,c,largest);
+  printf("the largest %d %d %d is %d",a,b,c,largest);
 }
-  
-    
+
 
       
   
