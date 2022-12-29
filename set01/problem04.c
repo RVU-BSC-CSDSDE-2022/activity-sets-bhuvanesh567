@@ -23,6 +23,6 @@ void add (int a, int b, int *sum){
   *sum= a+b;
 }
 void output(int a, int b, int sum){
-  printf("%d of %d is%d", a, b, sum);
+  printf("%d of %d is %d", a, b, sum);
 }
 
