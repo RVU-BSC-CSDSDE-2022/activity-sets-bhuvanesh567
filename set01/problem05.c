@@ -21,13 +21,16 @@ int input(){
 }
 
 int compare(int a, int b, int c){
-  if ((a>b)&&(a>c))
+  if ((a>=b && a>=c))
     return a;
-  else if((b>a)&&(b>c))
+  else if((b>=a && b>=c))
     return b;
-  else ((c>a)&&(c>b));
+  else
     return c;
-}
+  }
+
+
+ 
 
 void output(int a, int b, int c, int largest){
   printf("the largest %d %d %d is %d", a, b, c, largest);
